@@ -1,0 +1,67 @@
+$color-accent: rgb(10, 130, 228);
+$color-accent-dark: rgba(0, 20, 135, 0.909);
+$primary-color-01: rgb(255, 255, 255);
+$secondary-color-01: rgb(8, 239, 0);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex {
+    display: flex;
+}
+
+body {
+    background: url("https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    color: $primary-color-01;
+    font-family: sans-serif;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
+
+  }
+
+  .title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 14px;
+  }
+
+  .clock {
+    & div{
+        position: relative;
+        margin: 5px;   
+    }
+
+    & span {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        background-color: $color-accent;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        height: 80px;
+        width: 100px;
+        opacity: 0.8;
+    }
+
+    & .text {
+        background-color: $color-accent-dark;
+        text-transform: uppercase ;
+        letter-spacing: 2px;
+        font-size: 10px;
+        height: 30px;
+    }
+
+    & #ampm{
+        background-color: $secondary-color-01;
+        position: absolute;
+        font-size: 20px;
+        height: 30px;
+        width: 60px;
+        bottom: 0;
+    }
+  }
